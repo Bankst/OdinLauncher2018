@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AyalaLauncherBeta2016", "AyalaLauncherBeta2016\AyalaLauncherBeta2016.csproj", "{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3} = {D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RsyncNet", "RsyncNet\RsyncNet.csproj", "{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Debug|x86.Build.0 = Debug|Any CPU
+		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Release|x86.ActiveCfg = Release|Any CPU
+		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Release|x86.Build.0 = Release|Any CPU
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Debug|x86.ActiveCfg = Debug|x86
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Debug|x86.Build.0 = Debug|x86
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Release|Any CPU.ActiveCfg = Release|x86
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Release|x86.ActiveCfg = Release|x86
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

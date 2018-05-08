@@ -1,0 +1,92 @@
+﻿<Window x:Name="Ayala_Online_Launcher" x:Class="AyalaLauncherBeta2016.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AyalaLauncherBeta2016" Width="900" Height="300"
+        ResizeMode="NoResize" Icon="ayaIco.ico" Title="Ayala Online Launcher"
+        WindowStartupLocation="CenterScreen" AllowsTransparency="True"
+        WindowStyle="None" MouseDown="Window_MouseDown" Loaded="MainWindow_Loaded"
+        >
+    <Window.Background>
+        <ImageBrush ImageSource="res/ayaL.png" />
+    </Window.Background>
+    <Grid>
+        <Border x:Name="LoginBox" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Bottom" Width="170" CornerRadius="10" Margin="50,0,0,50"/>
+        <Button Name="PlayButton" Margin="0,0,175,0" BorderThickness="0" Background="Transparent" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Width="129" Height="140" Click="PlayButton_Click"
+                VerticalAlignment="Bottom" HorizontalAlignment="Right" IsEnabled="False" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <StackPanel>
+                        <Image Name="image1" Source="res/ayaL-P.png" Visibility="Visible" Stretch="Fill"/>
+                        <Image Name="image2" Source="res/ayaL-PC.png" Visibility="Collapsed" Stretch="Fill"/>
+                        <Image Name="image3" Source="res/ayaL-PCC.png" Visibility="Collapsed" Stretch="Fill"/>
+                        <Image Name="image4" Source="res/ayaL-PD.png" Visibility="Collapsed" Stretch="Fill"/>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="image1" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image2" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="image3" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image4" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter TargetName="image1" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image2" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image3" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="image4" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter TargetName="image1" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image2" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image3" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image4" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Name="ExitButton" VerticalAlignment="Top" Margin="0,71,48,0" Height="22" HorizontalAlignment="Right" Width="22" Click="ExitButton_Click"
+                BorderThickness="0" Background="Transparent" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <StackPanel>
+                        <Image Name="image1" Source="res/x.png" Stretch="UniformToFill" Visibility="Visible"/>
+                        <Image Name="image2" Source="res/xc.png" Stretch="UniformToFill" Visibility="Visible"/>
+                        <Image Name="image3" Source="res/xcc.png" Stretch="UniformToFill" Visibility="Visible"/>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="image1" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image2" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="image3" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter TargetName="image1" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image2" Property="Visibility" Value="Collapsed" />
+                            <Setter TargetName="image3" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Name="GameVersionLabel"
+               Content="Game Version null"
+               Margin="0,0,37,56"
+               FontFamily="Toledo" 
+               Width="150" Height="21" 
+               VerticalAlignment="Bottom"
+               HorizontalContentAlignment="Right" 
+               FontSize="10" HorizontalAlignment="Right"/>
+        <Label Name="LauncherVersionLabel"
+               Content="Launcher Version null"  
+               Margin="0,0,37,42" 
+               FontFamily="Toledo" FontSize="10"
+               Width="150" Height="21" 
+               VerticalAlignment="Bottom"
+               HorizontalContentAlignment="Right" 
+               HorizontalAlignment="Right"/>
+        <ProgressBar Name="UpdaterProgressBar" HorizontalAlignment="Center" Opacity=".60" Width="284" VerticalContentAlignment="Bottom" Margin="308,0,308,56" Height="26" VerticalAlignment="Bottom" Loaded="UpdaterProgressBar_Loaded"/>
+        <Label Name="UpdaterStatusLabel" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="308,0,308,56" Width="284" Height="26" HorizontalContentAlignment="Center" />
+    </Grid>
+</Window>
