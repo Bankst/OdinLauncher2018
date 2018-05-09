@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AyalaLauncherBeta2016", "AyalaLauncherBeta2016\AyalaLauncherBeta2016.csproj", "{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -26,14 +26,19 @@ Global
 		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Release|x86.ActiveCfg = Release|Any CPU
 		{E4FD01AF-0E65-4297-B337-3FDD9B4A7287}.Release|x86.Build.0 = Release|Any CPU
-		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Debug|x86.ActiveCfg = Debug|x86
 		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Debug|x86.Build.0 = Debug|x86
-		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Release|Any CPU.ActiveCfg = Release|x86
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Release|x86.ActiveCfg = Release|x86
 		{D0ADBA1F-1BAE-48F7-B090-6A36B82C28F3}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {284E7F55-D089-472A-815A-9B2759A73DAF}
 	EndGlobalSection
 EndGlobal

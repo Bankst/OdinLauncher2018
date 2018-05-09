@@ -88,5 +88,7 @@
                HorizontalAlignment="Right"/>
         <ProgressBar Name="UpdaterProgressBar" HorizontalAlignment="Center" Opacity=".60" Width="284" VerticalContentAlignment="Bottom" Margin="308,0,308,56" Height="26" VerticalAlignment="Bottom" Loaded="UpdaterProgressBar_Loaded"/>
         <Label Name="UpdaterStatusLabel" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="308,0,308,56" Width="284" Height="26" HorizontalContentAlignment="Center" />
+        <Image x:Name="Decor1" HorizontalAlignment="Left" Height="146" VerticalAlignment="Top" Width="133" Margin="697,86,0,0" Source="pack://siteoforigin:,,,/res/mons1.png" Stretch="UniformToFill" RenderTransformOrigin="0.06,0.329"/>
+        <Image x:Name="Decor2" HorizontalAlignment="Left" Height="191" VerticalAlignment="Top" Width="110" Margin="31,71,0,0" Source="pack://siteoforigin:,,,/res/FCleric1.png" Stretch="UniformToFill" RenderTransformOrigin="0.06,0.329"/>
     </Grid>
 </Window>

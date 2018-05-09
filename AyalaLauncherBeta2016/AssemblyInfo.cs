@@ -8,6 +8,6 @@
  [assembly: AssemblyTitle("Ayala Online Launcher")]
  [assembly: AssemblyProduct("Ayala Online")]
  [assembly: Guid("C086529C-00B2-4713-92BF-ECCDC83D53D4")]
- [assembly: AssemblyVersion("2018.5.8.1417")]
- [assembly: AssemblyFileVersion("2018.5.8.1417")]
+ [assembly: AssemblyVersion("2018.5.9.0535")]
+ [assembly: AssemblyFileVersion("2018.5.9.0535")]
  

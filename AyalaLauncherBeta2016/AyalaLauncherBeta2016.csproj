@@ -195,6 +195,8 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AssemblyInfo.cs</LastGenOutput>
     </Content>
+    <None Include="res\mons1.png" />
+    <None Include="res\FCleric1.png" />
     <Resource Include="FodyWeavers.xml">
       <SubType>Designer</SubType>
     </Resource>
